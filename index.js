@@ -1,6 +1,6 @@
 {
     // 1 masala
-    var Student = /** @class */ (function () {
+    let Student = /** @class */ (function () {
         function Student(name, age, grade) {
             this.name = name;
             this.age = age;
@@ -11,12 +11,13 @@
         };
         return Student;
     }());
-    var student = new Student("Ali", 20, "A");
+    let student = new Student("Ali", 20, "A");
     console.log(student.getInfo());
 }
+
 {
     // 2 masala
-    var BankAccount = /** @class */ (function () {
+    let BankAccount = /** @class */ (function () {
         function BankAccount(owner, balance) {
             this.owner = owner;
             this.balance = balance;
@@ -29,20 +30,20 @@
             if (this.balance >= amount) {
                 this.balance -= amount;
                 console.log("Hisobdan ".concat(amount, " yechildi. Qolgan balans: ").concat(this.balance));
-            }
-            else {
+            } else {
                 console.log("Yetarli mablag' mavjud emas!");
             }
         };
         return BankAccount;
     }());
-    var account = new BankAccount("Hasan", 1000);
+    let account = new BankAccount("Hasan", 1000);
     account.deposit(500);
     account.pay(300);
 }
+
 {
-    // masala
-    var Circle = /** @class */ (function () {
+    // 3 masala
+    let Circle = /** @class */ (function () {
         function Circle(radius) {
             this.radius = radius;
         }
@@ -51,12 +52,14 @@
         };
         return Circle;
     }());
-    var circle = new Circle(10);
+    let circle = new Circle(10);
     console.log("Doiraning yuzasi: ".concat(circle.getArea()));
 }
+
+
 {
-    // masala
-    var Product = /** @class */ (function () {
+    // 4 masala
+    let Product = /** @class */ (function () {
         function Product(name, price) {
             this.name = name;
             this.price = price;
@@ -66,13 +69,14 @@
         };
         return Product;
     }());
-    var product = new Product("Laptop", 500);
+    let product = new Product("Laptop", 500);
     product.applyDiscount(20);
     console.log("Chegirmadan keyingi narx: ".concat(product.price));
 }
+
 {
     // 5 masala
-    var Car = /** @class */ (function () {
+    let Car = /** @class */ (function () {
         function Car(brand, model, year) {
             this.brand = brand;
             this.model = model;
@@ -83,6 +87,7 @@
         };
         return Car;
     }());
-    var car = new Car("Toyota", "Corolla", 2022);
+    let car = new Car("Toyota", "Corolla", 2022);
     console.log(car.getCarInfo());
 }
+
